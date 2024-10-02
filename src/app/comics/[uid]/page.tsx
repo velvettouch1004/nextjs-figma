@@ -1,9 +1,12 @@
+import BottomBar from "@/components/BottomBar";
 import ComicDetailsTab from "@/components/comics/ComicDetailsTab";
 import ComicProfileBanner from "@/components/comics/ComicProfileBanner";
+import Navbar from "@/components/Navbar";
 
 export default function ComicPage() {
   return (
     <div>
+      <Navbar />
       <ComicProfileBanner
         views={123}
         imgSrc={"/Frame.png"}
@@ -16,6 +19,7 @@ export default function ComicPage() {
           title={"Revenant"}
         />
       </div>
+      <BottomBar />
     </div>
   );
 }

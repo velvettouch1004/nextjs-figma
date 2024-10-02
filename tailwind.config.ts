@@ -27,8 +27,11 @@ const config = {
         finalChapterBlack: "#0C0C0C",
         finalChapterDarkGray: "#1B1B1B",
         finalChapterLightGray: "#757575",
+        footerColor: "#1C1D20",
+        footerFontColor: "#fdfdfdd1",
         // Add more custom colors here
       },
+
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
@@ -46,19 +49,47 @@ const config = {
       maxHeight: {
         "712": "712px",
         "850": "850px",
+        "46": "46px",
+      },
+      margin: {
+        "15": "60px",
       },
       width: {
         "1800": "1800px",
         "545": "545px",
         "328": "328px",
+        "650": "650px",
+        "360": "360px",
       },
+      minHeight: {
+        "437": "437px",
+      },
+      transform: {
+        center: "translate(0px, 50%)",
+      },
+      top: {
+        "10": "10px",
+      },
+      border: {
+        borderBottom: "2px solid white",
+      },
+      fontSize: {
+        myFontsize: "16px",
+        NavFontsize: "18px",
+      },
+
       height: {
         "328": "328px",
+        "800": "800px",
+        "1080": "1080px",
+        "700": "700px",
+        "620": "620px",
       },
       maxWidth: {
         "545": "445px",
       },
       minWidth: {
+        "437": "437px",
         "200": "173px",
       },
       backgroundColor: {
@@ -66,6 +97,7 @@ const config = {
         "222": "rgb(205 156 156 / 20%);",
         dark: "#111111",
         fbfdff: "#FBFDFF",
+        search: "#1E1E1E",
       },
       textColor: {
         fbfdff: "#afafaf",
@@ -74,9 +106,13 @@ const config = {
       },
       lineHeight: {
         heavy: "88px",
+        myInlineheight: "22px",
       },
-      top: {
-        "130": "130px",
+      gap: {
+        9.5: "38px",
+      },
+      padding: {
+        "3.5": "13px",
       },
     },
   },

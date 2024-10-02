@@ -15,9 +15,11 @@ export default function Home() {
               <Portal style={{ maxWidth: "100%", height: "auto" }} />
             </div>
             <div className="mt-6 flex justify-center text-center">
-              <button className="bg-violet-600 hover:bg-violet-700 py-3 px-6 text-white rounded-lg">
-                Login
-              </button>
+              <a href="/home">
+                <button className="bg-violet-600 hover:bg-violet-700 py-3 px-6 text-white rounded-lg">
+                  Login
+                </button>
+              </a>
             </div>
           </div>
         </div>

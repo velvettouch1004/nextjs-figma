@@ -55,7 +55,7 @@ export default function ComicCarousel({
             {list.map((value: string, index: number) => (
               <div
                 key={index}
-                className="flex px-2 py-1 text-sm text-fbfdff justify-center  gap-3 rounded-xl bg-111111 w-max"
+                className="flex px-2 py-1 text-sm text-fbfdff justify-center  gap-3 rounded-md bg-111111 w-max"
               >
                 {value}
               </div>
