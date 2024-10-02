@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0c0c0c;
+  --foreground: #171717;
+}
+@font-face {
+  font-family: "Neue Regrade";
+  src: url("./fonts/Neue-Regrade-Variable-BF65af35d87b6a7.ttf")
+    format("truetype");
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0c0c0c;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+.title {
+  color: #fbfdff;
+  font-size: 65px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 88px; /* 92.593% */
+
+  letter-spacing: -4px;
+}
+
+.description {
+  color: #d1d1d1;
+  font-size: 14;
+
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  max-width: 545px;
+}
+
+.button {
+  display: flex;
+  padding: var(--Space-300, 12px) 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #111;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  border-radius: 8px;
+  background: #fbfdff;
+}
+
+.addbutton {
+  display: flex;
+  height: 46px;
+  padding: var(--Space-300, 12px) 19px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #d1d1d1;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  max-width: 545px;
+  border: 1px solid #d1d1d1;
+  border-radius: 8px;
+}
+
+.back_image {
+  width: 1800px;
+  height: 850px;
+  flex-shrink: 0;
+  border-radius: 24px;
+  border: var(--sds-size-stroke-border) solid rgba(251, 253, 255, 0.1);
+
+  background: linear-gradient(
+      215deg,
+      rgba(0, 0, 0, 0) 48.56%,
+      rgba(0, 0, 0, 0.64) 79.22%
+    ),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+    url("../../public/Frame-init.png") lightgray 0px -1251.02px / 109.389% 410.747%
+      no-repeat;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
